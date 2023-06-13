@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Website</title>
+
+    <!--==================================================================== Box icons =================================================================-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--======================================================================== Animation on Scroll ================================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!--=============================================================== header =======================================================================-->
+    <header class="header">       
+        <a href="#" class="logo">Download CV <i class='bx bx-download'></i></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>          
+        </nav>
+        <div class="bx bx-moon" id="darkMode-icon"  ></div>   
+    </header>
+
+
+    <!--=============================================================================== Home Section Design =============================================-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2 data-aos="zoom-in-down">Hi! I am</h2>
+            <h1 data-aos="zoom-in-right">Ryan Su</h1> 
+            
+            <div class="text-animate">
+                <h3 data-aos="zoom-in-right">Aspiring Software Engineer</h3>
+              </div>
+           
+              
+    <!--================================================ Social Media Avaliability Section ==================================================================-->        
+
+            <div class="social-media" data-aos="zoom-in-right">
+                
+                <a href="#"><i class='bx bxl-discord-alt'></i></i></a>
+               
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+
+                <a href="#"><i class='bx bxl-github'></i></a>    
+            </div>      
+        </div>
+
+        <!--============================================================== Work Wheel ========================================================================-->
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--1:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--1:1;">
+                    <i class='bx bxl-blender'></i>
+                    <h3>3D Design</h3>
+                </div>
+                <div class="profession" style="--1:2;">
+                    <i class='bx bx-palette' ></i>
+                    <h3>UI Design</h3>
+                </div>
+                <div class="profession" style="--1:3;">
+                    <i class='bx bx-book-content'></i>
+                    <h3>Student</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+    </section>
+
+    <!--============================================= About Section Design ====================================================================================-->
+    <section class="about" id="about">
+        
+            <div class="wrapper" data-aos="fade-up-right">
+                <div class="stim"></div>
+            </div>
+        </div>
+        <div class="about-content" data-aos="fade-up-left">
+        <h2 class="heading">About <span>Me </span></h2>
+        <h3>I'm Ryan Su - a Computer Engineering student from Queen's University with an
+            interest in Web Development and Machine learning, I also enjoy using blender and three.js to design and create 3D objects. 
+            I am a Web Development Coordinator at QMIND and a member of the AutoDrive Design team.
+        </h3>
+        </div>
+    </section>
+
+
+    <!--============================================================ My work section ==============================================================================-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="headerl" data-aos="zoom-in">My <span>Projects</span></h2>
+        <h3 class="freeTime" data-aos="zoom-in">Swipe <i class='bx bx-right-arrow-alt' ></i></h3>
+        <div  data-aos="zoom-in-right" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="projPho" src="./images/APSC 103.jpg" />
+                <h2 class="Charles">Hyperloop GUI</h2>
+                    <div class="DoBronx">
+                        <p class="GEOTAB">Created a graphical user interface for Hyperloop allowing users to have live updating data coming from the hyperloop pod </p>
+                        <h4 class="DAK">[JavaScript, HTML, CSS, Flask]</h4>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                
+                <img data-aos="zoom-in-up" class="projPho" src="./images/musicplayer.jpg" />
+                <h2 class="Charles">Music Player</h2>
+                <div class="DoBronx">
+                    <p class="GEOTAB">A music player that has a set playlist of songs  </p>
+                    <h4 class="DAK">[JavaScript, HTML, CSS]</h4>
+                </div>
+                
+              </div>
+              <div data-aos="zoom-in-left" class="swiper-slide">
+                <img class="projPho"src="./images/habits.jpg" />
+                <h2 class="Charles">Habuilder</h2>
+                <div class="DoBronx">
+                    <p class="GEOTAB">An app that promotes the process of building healthy habits and goal setting. </p>
+                    <h4 class="DAK">[React Native, Golang]</h4>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-left" class="swiper-slide">
+                <img class="projPho1"src="./images/gymer.jpg" />
+                <h2 class="Charles">Fitness App</h2>
+                <div class="DoBronx">
+                    <p class="GEOTAB">A fitness app made that allows users to keep track of their workout progress and follow a set routine. </p>
+                    <h4 class="DAK">[React Native, Kotlin]</h4>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-left" class="swiper-slide">
+                <img class="projPho1"src="./images/isoroom.jpg" />
+                <h2 class="Charles">Isometric Room</h2>
+                <div class="DoBronx">
+                    <p class="GEOTAB">Isometric Room Designed by using Blender </p>
+                    <h4 class="DAK">[Blender, THREE.js]</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <h2 class="header">More Coming Soon...</h2>      
+              </div>   
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>    
+    </section >
+
+     <!--============================================================ Skills =====================================================================================-->
+    <section class='skills' id='skills'>
+        <h2 class="headerl" data-aos="zoom-in">My <span>Skills</span></h2>
+        <div class="containerl">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-down-right" class="img">
+                        <img src="./images/htmllogo.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-down-right">HTML</h5>
+                </div>
+                
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-down" class="img">
+                        <img src="./images/css.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-down">CSS</h5>
+                </div>
+                
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-down-left" class="img">
+                        <img src="./images/JS.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-down-left">JavaScript</h5>
+                </div>
+                
+            </div>
+            
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-up-right" class="img">
+                        <img src="./images/python.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-up-right">Python</h5>
+                </div>   
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-down" class="img">
+                        <img src="./images/GOLANG.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-down">GO</h5>
+                </div>   
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-up-left" class="img">
+                        <img src="./images/Csharp.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-up-left">C & C#</h5>
+                </div>   
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-right" class="img">
+                        <img src="./images/reacticon.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-right">React</h5>
+                </div>
+                
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="flip-up" class="img">
+                        <img src="./images/reactnative.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="flip-up">React Native</h5>
+                </div>
+                
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div data-aos="fade-left" class="img">
+                        <img src="./images/flasker.jpg" alt="" class="skill-icon">
+                    </div>
+                    <h5 class="five" data-aos="fade-left">Flask</h5>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================================== Contact Section ========================================================================-->
+
+    <section class="contact" id="contact">
+        <h2 class="headerl" data-aos="zoom-in">Contact <span>Me</span></h2>
+        <h3 class="buggy" data-aos="zoom-in"><i class='bx bxs-phone'>: 437-545-5126</i>  |  <i class='bx bxl-gmail'>: rsu4958@gmail.com</i>  |  <i class='bx bxs-location-plus' >Oakville, ON</i></h3>
+
+        <form action="#">
+            <div class="input-box" data-aos="zoom-in">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field" data-aos="zoom-in">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box" data-aos="zoom-in">
+                <div class="input-field" data-aos="zoom-in">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field" data-aos="zoom-in">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field" data-aos="zoom-in"> 
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="'btn-box.btns" data-aos="zoom-in">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <!--================================================================================Footer================================================================================-->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright @ 2023 by Ryan Su | All Rights Reserved</p>
+        </div>    
+    </footer>
+    
+    <!-- ======================================================= Js ==================================================================================================-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+    </script>
+    <script src="script.js"></script>   
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
