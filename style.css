@@ -18,6 +18,8 @@
     --shadow-color: rgba(0, 0, 0, .2);
     --black: #000;
     --jashin: #F8FBF8;
+    --johie: #000;
+    
 
     
 }
@@ -28,6 +30,8 @@
     --shadow-color: rgba(0, 0, 0, .7);
     --black: #fff;
     --jashin: #000;
+    --johie: #fff;
+    
 }
 
 html {
@@ -110,6 +114,14 @@ body {
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--white-color);
+    display: none;
+
+
 }
 
 .header.sticky #darkMode-icon {
@@ -299,6 +311,7 @@ section {
     border-radius: 50%;
 }
 
+/*==========================================REPLACE Y==================================================*/
 .home .profession-container .overlay {
     position: absolute;
     top: 0;
@@ -430,6 +443,7 @@ span {
     border: .2rem solid var(--main-color);
 }
 
+/*
 .container{
     display: flex;
     justify-content: center;
@@ -498,6 +512,8 @@ span {
     transition: .3s all ease-in-out
   
   }
+
+  */
 
 .wrapper {
     display: flex;
@@ -708,28 +724,9 @@ span {
 }
 
 
-/*Screen sizes*/
 
 
 
-@media (max-width: 1024px) {
-    .header {
-        padding: 2rem 3%;
-
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .home .portfolio-container .profession-box{
-        right: -22rem;
-    }
-
-    .home .portfolio-container .overlay{
-        right: -15rem;
-    }
-}  
 
 @keyframes homeBgText {
     0%,
@@ -745,5 +742,417 @@ span {
 
 }
 
+/*Screen sizes*/
+
+/*@media (max-height: 1080px){
+
+    .home .profession-box .profession {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--main-color);
+        transform: rotate(calc(360deg / 4 * var(--1)));
+        transform-origin: 384px;
+        background: var(--bg-color);
+        padding: 26px 0;
+    }
+
+    
+
+    
+
+    .home .profession-container {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 960px;
+        height:  960px;
+        overflow: hidden;
+        pointer-events: none;
+    
+    }
+
+    .home .profession-box .profession:nth-child(1) i {
+        margin-right: 250px;
+    }
+    
+    .home .profession-box .profession:nth-child(2),
+    .home .profession-box .profession:nth-child(4) {
+        padding-bottom: 60px;
+    }
+
+    .home .profession i {
+        font-size: 6.8rem;
+    }
+    
+    .home .profession h3 {
+        font-size: 3.2rem;
+        line-height: 1;
+        font-weight: 600;
+       
+    }
+
+    .home .profession-box .circle {
+        width: 960px;
+        height: 960px;
+        border: 3px solid var(--main-color);
+        border-radius: 50%;
+    }
+
+
+    .home .profession-container .overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 500px solid var(--main-color);
+        border-right: 500px  solid var(--main-color);
+        border-bottom: 500px solid var(--main-color);
+        border-left: 450px solid transparent;
+    
+    }
+
+    .home .profession-container .profession-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 960px;
+        height: 960px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: professionRotate 13s ease-out infinite;
+    }
+}
+*/
+
+@media (min-width: 1920px) {
+    
+
+    .navbar a {
+        color: var(--johie);
+    }
+
+    #darkMode-icon {
+        font-size: 2.4rem;
+        color: var(--johie);
+        cursor: pointer;
+    }
+
+    .DAK, 
+    .GEOTAB {
+        font-size: 1.5rem;
+    }
+
+    .home-content h2 {
+        font-size: 8 rem;
+        font-weight: 700;
+        line-height: .3;
+    
+    }
+    
+    .home-content h1{
+        font-size: 10rem;
+        font-weight: 700;
+        margin-bottom: .3rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 2.3rem;
+
+    }
+
+    .about-content h2{
+        text-align: center;
+        line-height: 1.2;
+        font-size: 6rem;
+
+    }
+    
+    .about-content h3 {
+        margin-top: 5%;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-left: 10%;
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+
 
  
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+
+    .home .profession-container {
+        height: 85.8rem;
+    }
+
+    .home .profession-container .profession-box {
+        right: -12rem;
+        height: 85.5rem;
+    }
+
+    .home .profession-container .overlay {
+        right: -9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .home .profession-container .profession-box {
+        right: -22em;
+        
+    }
+
+    .home .profession-container .overlay {
+        right: -15rem;
+    }
+}
+ 
+@media (max-width: 991px) {
+    .home .home-content {
+        max-width: 50rem;
+    }
+    .home .profession-container .profession-box {
+        right: 45rem;
+    }
+
+    .home .profession-container .overlay {
+        right: -39.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+        color: var(--johie);
+        
+    }
+
+    #darkMode-icon {
+        position: absolute;
+        right: 7rem;
+        font-size: 2.6rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0; 
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--jashin);
+    }
+
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2){
+        color: var(--jashin);
+
+    }
+
+    .navbar a.active {
+        color: var(--black);
+    }
+
+    .navbar a::before {
+        display: none;
+
+    }
+
+    .home {
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content .social-media a{
+        margin: 2.5rem .75rem 3rem;
+    }
+
+    .home .profession-container .profession-box{
+        position: fixed;
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .home .profession-box .profession {
+        padding: 0 13px;
+        left: auto;
+        transform-origin: 0;
+    }
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-120px, -210px);
+    }
+
+    .home .profession-box .profession:nth-child(1) i {
+        margin-right: 0;
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(-0px, -335px);
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-110px, -450px);
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-220px, -335px);
+    }
+
+    .home .profession-box .circle{
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+
+    .home .profession-container .overlay{
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+
+    .about {
+        font-size: 2rem;
+        text-align: center;
+
+
+    }
+
+    .about-content h2{
+        text-align: center;
+        padding-right: 10%;
+        
+    }
+
+    .about-content h3{
+        text-align: center;
+        padding-right: 10%;
+        font-size: 1.2rem;
+        
+    }
+
+    .stim{
+        background-image: url('./images/Ryan_Su.jpg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        width: 250px;
+        box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+        animation: animate 5s ease-in-out infinite;
+        transition: all 3s ease-in-out;
+        border: 4px solid #000;
+        
+    }
+
+    
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size:  50%;
+    }
+
+    #darkMode-icon {
+        right: 6rem;
+    }
+
+    .home .profession-container  {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .home .profession-container .overlay{
+        position: fixed;
+        top: 50rem;
+        left: 0;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+
+    .home {
+        padding: 0 3% 30rem;
+    }
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-110px, -220px);
+    }
+
+
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(5px, -335px);
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-110px, -220px);
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-210px, -335px);
+    }
+}
+
+@media (max-width: 450px) {
+    
+
+
+}
+

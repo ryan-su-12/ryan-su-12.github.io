@@ -30,7 +30,8 @@
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>          
         </nav>
-        <div class="bx bx-moon" id="darkMode-icon"  ></div>   
+        <div class="bx bx-moon" id="darkMode-icon"  ></div>  
+        <div class="bx bx-menu" id="menu-icon"></div> 
     </header>
 
 
@@ -251,31 +252,31 @@
         <h2 class="headerl" data-aos="zoom-in">Contact <span>Me</span></h2>
         <h3 class="buggy" data-aos="zoom-in"><i class='bx bxs-phone'>: 437-545-5126</i>  |  <i class='bx bxl-gmail'>: rsu4958@gmail.com</i>  |  <i class='bx bxs-location-plus' >Oakville, ON</i></h3>
 
-        <form action="#">
+        <form onsubmit="sendEmail(); reset(); return false;">
             <div class="input-box" data-aos="zoom-in">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" id="name" placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field" data-aos="zoom-in">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" id="email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="input-box" data-aos="zoom-in">
                 <div class="input-field" data-aos="zoom-in">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" id="number" placeholder="Mobile Number" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field" data-aos="zoom-in">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" id='subject'placeholder="Email Subject" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field" data-aos="zoom-in"> 
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <span class="focus"></span>
             </div>
 
@@ -316,6 +317,28 @@
     },
   });
     </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "rs861057@gmail.com",
+            Password : "password",
+            To : 'rs861057@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+}
+
+
+    </script>
+
+
+
     <script src="script.js"></script>   
     <script>
         AOS.init();
