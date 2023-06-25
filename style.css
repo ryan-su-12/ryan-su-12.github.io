@@ -1006,8 +1006,14 @@ span {
         font-size: 5rem;
     }
 
-    .home-content .social-media a{
+    .home-content .social-media a {
         margin: 2.5rem .75rem 3rem;
+    }
+
+    .home-content .profession-container {
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .home .profession-container .profession-box{
@@ -1037,7 +1043,7 @@ span {
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-110px, -450px);
+        transform: rotate(90deg) translate(-115px, -450px);
     }
 
     .home .profession-box .profession:nth-child(4) {
@@ -1062,6 +1068,8 @@ span {
 
     .about {
         font-size: 2rem;
+        text-align: center;
+        flex-direction: column-reverse;
         text-align: center;
 
 
@@ -1095,10 +1103,10 @@ span {
     }
 
 
- 
+}
 
+@media (max-width: 617px) {
     
-
 }
 
 @media (max-width: 834px) {
@@ -1266,6 +1274,7 @@ span {
         font-size:  50%;
     }
 
+
     #darkMode-icon {
         right: 6rem;
     }
@@ -1276,6 +1285,12 @@ span {
 
     }
 
+    .home .profession-container .profession-box  {
+        display: none;
+        
+
+    }
+
     .home .profession-container .overlay{
         position: fixed;
         top: 50rem;
@@ -1283,6 +1298,11 @@ span {
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
+       
+    }
+
+    .home .profession-box .circle{
+        display: none;
     }
 
  
@@ -1306,6 +1326,13 @@ span {
 
     .home .profession-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-210px, -335px);
+    }
+}
+
+@media (max-width: 365px) {
+    .about .wrapper .stim {
+        width: 90vw; 
+
     }
 }
 
