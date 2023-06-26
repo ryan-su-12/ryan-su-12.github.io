@@ -1272,6 +1272,7 @@ span {
 @media (max-width: 414px) {
     html {
         font-size:  50%;
+        padding-left: 10%;
     }
 
 
