@@ -1269,7 +1269,7 @@ span {
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 414px) {
     html {
         font-size:  50%;
     }
@@ -1311,29 +1311,35 @@ span {
         padding: 0 3% 30rem;
     }
 
-    .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-110px, -220px);
+    .about {
+      
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-content h2{
+        text-align: center;
+       
+        
+    }
+
+    .about-content h3{
+        text-align: center;
+        padding-right: 10%;
+        font-size: 1.2rem;
+        
+    }
+
+    .wrapper .stim {
+        width: 70vw;
+        margin-top: -2rem;
+      
     }
 
 
-    .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(5px, -335px);
-    }
 
-    .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
-    }
-
-    .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -335px);
-    }
 }
 
-@media (max-width: 365px) {
-    .about .wrapper .stim {
-        width: 90vw; 
 
-    }
-}
 
 
