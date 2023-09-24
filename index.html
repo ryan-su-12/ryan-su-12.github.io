@@ -25,6 +25,9 @@
     <!--=============================================================== header =======================================================================-->
     <header class="header">       
         <a href="#" class="logo">Download CV <i class='bx bx-download'></i></a>
+        <!--== <button class = "logo" id="pdfButton">Download My CV <i class='bx bx-download'></i></button> =-->
+        
+        
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -46,15 +49,7 @@
             
             <div class="text-animate">
                 <h3 data-aos="zoom-in-right">Aspiring Software Engineer</h3>
-              </div>
-
-            
-
-              
-      
-
-           
-              
+              </div>          
     <!--================================================ Social Media Avaliability Section ==================================================================-->        
 
             <div class="social-media" data-aos="zoom-in-right">
@@ -172,12 +167,11 @@
                 <div class="DoBronx">
                     <p class="GEOTAB">A music player that has a set playlist of songs  </p>
                     <h4 class="DAK">[JavaScript, HTML, CSS]</h4>
-                </div>
-                
+                </div>  
               </div>
               <div data-aos="zoom-in-left" class="swiper-slide">
                 <img class="projPho"src="./images/habits.jpg" />
-                <h2 class="Charles">Oakville Shawarma Blog</h2>
+                <h2 class="Charles">Shawarma Insider</h2>
                 <div class="DoBronx">
                     <p class="GEOTAB">A blog where users can share their experiences from different shawarma shops across Oakville Ontario. </p>
                     <h4 class="DAK">[React.js, MySQL]</h4>
@@ -198,7 +192,7 @@
                 <h2 class="Charles">SuKudo</h2>
                 <div class="DoBronx">
                     <p class="GEOTAB">A website containing many classic games (i.e Chess, Pacman) </p>
-                    <h4 class="DAK">[ React.js, SCSS]</h4>
+                    <h4 class="DAK">[MongoDB, Express.js, React.js, SCSS, Node.js]</h4>
                 </div>
               </div>
 
@@ -384,6 +378,15 @@
 }
 
 
+    </script>
+    <script>
+        document.getElementById("pdfButton").addEventListener("click", function() {
+    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+    var pdfUrl = 'ResumeFall2023.pdf';
+    
+    // Open the PDF in a new window or tab
+    window.open(pdfUrl, '_try');
+        });
     </script>
 
 

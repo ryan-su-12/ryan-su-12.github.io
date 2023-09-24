@@ -31,7 +31,7 @@
     --black: #fff;
     --jashin: #000;
     --johie: #fff;
-    
+       
 }
 
 html {
@@ -178,9 +178,6 @@ section {
     animation-delay: 2s;
   
 }
-
-
-
 
 .home-content .social-media .button {
     display: inline-flex;
@@ -379,7 +376,7 @@ span {
 
 /*Blob animation*/
 .stim{
-    background-image: url('./images/Ryan_Su.jpg');
+    background-image: url('./images/ryanHeadshot.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
